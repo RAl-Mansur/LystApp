@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D4B637125B60A3D007C9C34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B637025B60A3D007C9C34 /* AppDelegate.swift */; };
+		0D4B637325B60A3D007C9C34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B637225B60A3D007C9C34 /* SceneDelegate.swift */; };
+		0D4B637525B60A3D007C9C34 /* CatBreedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B637425B60A3D007C9C34 /* CatBreedsViewController.swift */; };
+		0D4B637A25B60A3D007C9C34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D4B637925B60A3D007C9C34 /* Assets.xcassets */; };
+		0D4B637D25B60A3D007C9C34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4B637B25B60A3D007C9C34 /* LaunchScreen.storyboard */; };
+		0D4B638825B60A3E007C9C34 /* LystAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B638725B60A3E007C9C34 /* LystAppTests.swift */; };
+		0D4B639325B60A3E007C9C34 /* LystAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B639225B60A3E007C9C34 /* LystAppUITests.swift */; };
+		0D4B63A425B60A64007C9C34 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B63A325B60A64007C9C34 /* Endpoint.swift */; };
+		0D4B63AA25B60B61007C9C34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B63A925B60B61007C9C34 /* Constants.swift */; };
+		0D4B63BB25B60E30007C9C34 /* CatBreedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B63BA25B60E30007C9C34 /* CatBreedsViewModel.swift */; };
+		0D4B63C025B61248007C9C34 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B63BF25B61248007C9C34 /* Coordinator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D4B638425B60A3E007C9C34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D4B636525B60A3D007C9C34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D4B636C25B60A3D007C9C34;
+			remoteInfo = LystApp;
+		};
+		0D4B638F25B60A3E007C9C34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D4B636525B60A3D007C9C34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D4B636C25B60A3D007C9C34;
+			remoteInfo = LystApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D4B636D25B60A3D007C9C34 /* LystApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LystApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D4B637025B60A3D007C9C34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0D4B637225B60A3D007C9C34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0D4B637425B60A3D007C9C34 /* CatBreedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsViewController.swift; sourceTree = "<group>"; };
+		0D4B637925B60A3D007C9C34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D4B637C25B60A3D007C9C34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D4B637E25B60A3D007C9C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D4B638325B60A3E007C9C34 /* LystAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LystAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D4B638725B60A3E007C9C34 /* LystAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LystAppTests.swift; sourceTree = "<group>"; };
+		0D4B638925B60A3E007C9C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D4B638E25B60A3E007C9C34 /* LystAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LystAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D4B639225B60A3E007C9C34 /* LystAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LystAppUITests.swift; sourceTree = "<group>"; };
+		0D4B639425B60A3E007C9C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D4B63A325B60A64007C9C34 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		0D4B63A925B60B61007C9C34 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0D4B63BA25B60E30007C9C34 /* CatBreedsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsViewModel.swift; sourceTree = "<group>"; };
+		0D4B63BF25B61248007C9C34 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D4B636A25B60A3D007C9C34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D4B638025B60A3E007C9C34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D4B638B25B60A3E007C9C34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D4B636425B60A3D007C9C34 = {
+			isa = PBXGroup;
+			children = (
+				0D4B636F25B60A3D007C9C34 /* LystApp */,
+				0D4B638625B60A3E007C9C34 /* LystAppTests */,
+				0D4B639125B60A3E007C9C34 /* LystAppUITests */,
+				0D4B636E25B60A3D007C9C34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D4B636E25B60A3D007C9C34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D4B636D25B60A3D007C9C34 /* LystApp.app */,
+				0D4B638325B60A3E007C9C34 /* LystAppTests.xctest */,
+				0D4B638E25B60A3E007C9C34 /* LystAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D4B636F25B60A3D007C9C34 /* LystApp */ = {
+			isa = PBXGroup;
+			children = (
+				0D4B63B125B60C4B007C9C34 /* Networking */,
+				0D4B63A825B60B4F007C9C34 /* Helpers */,
+				0D4B63B225B60CC6007C9C34 /* Screens */,
+				0D4B637025B60A3D007C9C34 /* AppDelegate.swift */,
+				0D4B637225B60A3D007C9C34 /* SceneDelegate.swift */,
+				0D4B637925B60A3D007C9C34 /* Assets.xcassets */,
+				0D4B637B25B60A3D007C9C34 /* LaunchScreen.storyboard */,
+				0D4B637E25B60A3D007C9C34 /* Info.plist */,
+			);
+			path = LystApp;
+			sourceTree = "<group>";
+		};
+		0D4B638625B60A3E007C9C34 /* LystAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D4B638725B60A3E007C9C34 /* LystAppTests.swift */,
+				0D4B638925B60A3E007C9C34 /* Info.plist */,
+			);
+			path = LystAppTests;
+			sourceTree = "<group>";
+		};
+		0D4B639125B60A3E007C9C34 /* LystAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D4B639225B60A3E007C9C34 /* LystAppUITests.swift */,
+				0D4B639425B60A3E007C9C34 /* Info.plist */,
+			);
+			path = LystAppUITests;
+			sourceTree = "<group>";
+		};
+		0D4B63A825B60B4F007C9C34 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0D4B63A925B60B61007C9C34 /* Constants.swift */,
+				0D4B63BF25B61248007C9C34 /* Coordinator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0D4B63B125B60C4B007C9C34 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0D4B63A325B60A64007C9C34 /* Endpoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0D4B63B225B60CC6007C9C34 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0D4B63B325B60CCC007C9C34 /* BreedsList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0D4B63B325B60CCC007C9C34 /* BreedsList */ = {
+			isa = PBXGroup;
+			children = (
+				0D4B637425B60A3D007C9C34 /* CatBreedsViewController.swift */,
+				0D4B63BA25B60E30007C9C34 /* CatBreedsViewModel.swift */,
+			);
+			path = BreedsList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D4B636C25B60A3D007C9C34 /* LystApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D4B639725B60A3E007C9C34 /* Build configuration list for PBXNativeTarget "LystApp" */;
+			buildPhases = (
+				0D4B636925B60A3D007C9C34 /* Sources */,
+				0D4B636A25B60A3D007C9C34 /* Frameworks */,
+				0D4B636B25B60A3D007C9C34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LystApp;
+			productName = LystApp;
+			productReference = 0D4B636D25B60A3D007C9C34 /* LystApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D4B638225B60A3E007C9C34 /* LystAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D4B639A25B60A3E007C9C34 /* Build configuration list for PBXNativeTarget "LystAppTests" */;
+			buildPhases = (
+				0D4B637F25B60A3E007C9C34 /* Sources */,
+				0D4B638025B60A3E007C9C34 /* Frameworks */,
+				0D4B638125B60A3E007C9C34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D4B638525B60A3E007C9C34 /* PBXTargetDependency */,
+			);
+			name = LystAppTests;
+			productName = LystAppTests;
+			productReference = 0D4B638325B60A3E007C9C34 /* LystAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0D4B638D25B60A3E007C9C34 /* LystAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D4B639D25B60A3E007C9C34 /* Build configuration list for PBXNativeTarget "LystAppUITests" */;
+			buildPhases = (
+				0D4B638A25B60A3E007C9C34 /* Sources */,
+				0D4B638B25B60A3E007C9C34 /* Frameworks */,
+				0D4B638C25B60A3E007C9C34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D4B639025B60A3E007C9C34 /* PBXTargetDependency */,
+			);
+			name = LystAppUITests;
+			productName = LystAppUITests;
+			productReference = 0D4B638E25B60A3E007C9C34 /* LystAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D4B636525B60A3D007C9C34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					0D4B636C25B60A3D007C9C34 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					0D4B638225B60A3E007C9C34 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 0D4B636C25B60A3D007C9C34;
+					};
+					0D4B638D25B60A3E007C9C34 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 0D4B636C25B60A3D007C9C34;
+					};
+				};
+			};
+			buildConfigurationList = 0D4B636825B60A3D007C9C34 /* Build configuration list for PBXProject "LystApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D4B636425B60A3D007C9C34;
+			productRefGroup = 0D4B636E25B60A3D007C9C34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D4B636C25B60A3D007C9C34 /* LystApp */,
+				0D4B638225B60A3E007C9C34 /* LystAppTests */,
+				0D4B638D25B60A3E007C9C34 /* LystAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D4B636B25B60A3D007C9C34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4B637D25B60A3D007C9C34 /* LaunchScreen.storyboard in Resources */,
+				0D4B637A25B60A3D007C9C34 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D4B638125B60A3E007C9C34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D4B638C25B60A3E007C9C34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D4B636925B60A3D007C9C34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4B63AA25B60B61007C9C34 /* Constants.swift in Sources */,
+				0D4B637525B60A3D007C9C34 /* CatBreedsViewController.swift in Sources */,
+				0D4B63BB25B60E30007C9C34 /* CatBreedsViewModel.swift in Sources */,
+				0D4B637125B60A3D007C9C34 /* AppDelegate.swift in Sources */,
+				0D4B63A425B60A64007C9C34 /* Endpoint.swift in Sources */,
+				0D4B637325B60A3D007C9C34 /* SceneDelegate.swift in Sources */,
+				0D4B63C025B61248007C9C34 /* Coordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D4B637F25B60A3E007C9C34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4B638825B60A3E007C9C34 /* LystAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D4B638A25B60A3E007C9C34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4B639325B60A3E007C9C34 /* LystAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D4B638525B60A3E007C9C34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D4B636C25B60A3D007C9C34 /* LystApp */;
+			targetProxy = 0D4B638425B60A3E007C9C34 /* PBXContainerItemProxy */;
+		};
+		0D4B639025B60A3E007C9C34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D4B636C25B60A3D007C9C34 /* LystApp */;
+			targetProxy = 0D4B638F25B60A3E007C9C34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D4B637B25B60A3D007C9C34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D4B637C25B60A3D007C9C34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D4B639525B60A3E007C9C34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D4B639625B60A3E007C9C34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D4B639825B60A3E007C9C34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G93VTEATC;
+				INFOPLIST_FILE = LystApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ilmlabs.LystApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D4B639925B60A3E007C9C34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G93VTEATC;
+				INFOPLIST_FILE = LystApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ilmlabs.LystApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0D4B639B25B60A3E007C9C34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G93VTEATC;
+				INFOPLIST_FILE = LystAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ilmlabs.LystAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LystApp.app/LystApp";
+			};
+			name = Debug;
+		};
+		0D4B639C25B60A3E007C9C34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G93VTEATC;
+				INFOPLIST_FILE = LystAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ilmlabs.LystAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LystApp.app/LystApp";
+			};
+			name = Release;
+		};
+		0D4B639E25B60A3E007C9C34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G93VTEATC;
+				INFOPLIST_FILE = LystAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ilmlabs.LystAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LystApp;
+			};
+			name = Debug;
+		};
+		0D4B639F25B60A3E007C9C34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G93VTEATC;
+				INFOPLIST_FILE = LystAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ilmlabs.LystAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LystApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D4B636825B60A3D007C9C34 /* Build configuration list for PBXProject "LystApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D4B639525B60A3E007C9C34 /* Debug */,
+				0D4B639625B60A3E007C9C34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D4B639725B60A3E007C9C34 /* Build configuration list for PBXNativeTarget "LystApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D4B639825B60A3E007C9C34 /* Debug */,
+				0D4B639925B60A3E007C9C34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D4B639A25B60A3E007C9C34 /* Build configuration list for PBXNativeTarget "LystAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D4B639B25B60A3E007C9C34 /* Debug */,
+				0D4B639C25B60A3E007C9C34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D4B639D25B60A3E007C9C34 /* Build configuration list for PBXNativeTarget "LystAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D4B639E25B60A3E007C9C34 /* Debug */,
+				0D4B639F25B60A3E007C9C34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D4B636525B60A3D007C9C34 /* Project object */;
+}
