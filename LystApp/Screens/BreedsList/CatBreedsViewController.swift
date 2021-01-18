@@ -9,12 +9,13 @@ import UIKit
 
 class CatBreedsViewController: UIViewController {
     
-    let viewModel = CatBreedsViewModel()
+    var viewModel: CatBreedsViewModelProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .red
+        viewModel?.getCatBreeds()
     }
 
 }

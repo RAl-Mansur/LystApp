@@ -18,6 +18,9 @@
 		0D4B63AA25B60B61007C9C34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B63A925B60B61007C9C34 /* Constants.swift */; };
 		0D4B63BB25B60E30007C9C34 /* CatBreedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B63BA25B60E30007C9C34 /* CatBreedsViewModel.swift */; };
 		0D4B63C025B61248007C9C34 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B63BF25B61248007C9C34 /* Coordinator.swift */; };
+		0D4B63D125B615DD007C9C34 /* CatBreedsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B63D025B615DD007C9C34 /* CatBreedsInteractor.swift */; };
+		0D4B63D725B61644007C9C34 /* CatBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B63D625B61644007C9C34 /* CatBreed.swift */; };
+		0D919A0F25B61E00007B1911 /* NetworkingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D919A0E25B61E00007B1911 /* NetworkingHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		0D4B63A925B60B61007C9C34 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0D4B63BA25B60E30007C9C34 /* CatBreedsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsViewModel.swift; sourceTree = "<group>"; };
 		0D4B63BF25B61248007C9C34 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		0D4B63D025B615DD007C9C34 /* CatBreedsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsInteractor.swift; sourceTree = "<group>"; };
+		0D4B63D625B61644007C9C34 /* CatBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreed.swift; sourceTree = "<group>"; };
+		0D919A0E25B61E00007B1911 /* NetworkingHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 		0D4B636F25B60A3D007C9C34 /* LystApp */ = {
 			isa = PBXGroup;
 			children = (
+				0D4B63D525B6163A007C9C34 /* Models */,
 				0D4B63B125B60C4B007C9C34 /* Networking */,
 				0D4B63A825B60B4F007C9C34 /* Helpers */,
 				0D4B63B225B60CC6007C9C34 /* Screens */,
@@ -139,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				0D4B63A925B60B61007C9C34 /* Constants.swift */,
-				0D4B63BF25B61248007C9C34 /* Coordinator.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -148,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				0D4B63A325B60A64007C9C34 /* Endpoint.swift */,
+				0D4B63D025B615DD007C9C34 /* CatBreedsInteractor.swift */,
+				0D919A0E25B61E00007B1911 /* NetworkingHelpers.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -155,6 +163,7 @@
 		0D4B63B225B60CC6007C9C34 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				0D4B63BF25B61248007C9C34 /* Coordinator.swift */,
 				0D4B63B325B60CCC007C9C34 /* BreedsList */,
 			);
 			path = Screens;
@@ -167,6 +176,14 @@
 				0D4B63BA25B60E30007C9C34 /* CatBreedsViewModel.swift */,
 			);
 			path = BreedsList;
+			sourceTree = "<group>";
+		};
+		0D4B63D525B6163A007C9C34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D4B63D625B61644007C9C34 /* CatBreed.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,8 +317,11 @@
 			files = (
 				0D4B63AA25B60B61007C9C34 /* Constants.swift in Sources */,
 				0D4B637525B60A3D007C9C34 /* CatBreedsViewController.swift in Sources */,
+				0D4B63D725B61644007C9C34 /* CatBreed.swift in Sources */,
+				0D919A0F25B61E00007B1911 /* NetworkingHelpers.swift in Sources */,
 				0D4B63BB25B60E30007C9C34 /* CatBreedsViewModel.swift in Sources */,
 				0D4B637125B60A3D007C9C34 /* AppDelegate.swift in Sources */,
+				0D4B63D125B615DD007C9C34 /* CatBreedsInteractor.swift in Sources */,
 				0D4B63A425B60A64007C9C34 /* Endpoint.swift in Sources */,
 				0D4B637325B60A3D007C9C34 /* SceneDelegate.swift in Sources */,
 				0D4B63C025B61248007C9C34 /* Coordinator.swift in Sources */,

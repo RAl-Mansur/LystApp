@@ -24,6 +24,10 @@ class MainCoordinator: Coordinator {
     
     func start() {
         let viewController = CatBreedsViewController()
+        let interactor = CatBreedsInteractor()
+        let viewModel = CatBreedsViewModel(interactor: interactor)
+        
+        viewController.viewModel = viewModel
         navigationController.pushViewController(viewController, animated: false)
     }
 }
