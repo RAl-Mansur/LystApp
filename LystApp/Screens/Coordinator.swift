@@ -23,11 +23,11 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController = CatBreedsViewController()
+        let view = CatBreedsViewController()
         let interactor = CatBreedsInteractor()
-        let viewModel = CatBreedsViewModel(interactor: interactor)
+        let viewModel = CatBreedsViewModel(view: view, interactor: interactor)
         
-        viewController.viewModel = viewModel
-        navigationController.pushViewController(viewController, animated: false)
+        view.viewModel = viewModel
+        navigationController.pushViewController(view, animated: false)
     }
 }

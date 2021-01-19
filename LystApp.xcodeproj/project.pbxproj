@@ -21,6 +21,9 @@
 		0D4B63D125B615DD007C9C34 /* CatBreedsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B63D025B615DD007C9C34 /* CatBreedsInteractor.swift */; };
 		0D4B63D725B61644007C9C34 /* CatBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B63D625B61644007C9C34 /* CatBreed.swift */; };
 		0D919A0F25B61E00007B1911 /* NetworkingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D919A0E25B61E00007B1911 /* NetworkingHelpers.swift */; };
+		0DA7100B25B6F7EE00ABA32A /* CatBreedsInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7100A25B6F7EE00ABA32A /* CatBreedsInterfaces.swift */; };
+		0DD87D1925B6E81F005E96AA /* CatBreedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD87D1725B6E81F005E96AA /* CatBreedCollectionViewCell.swift */; };
+		0DD87D1A25B6E81F005E96AA /* CatBreedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD87D1825B6E81F005E96AA /* CatBreedCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		0D4B63D025B615DD007C9C34 /* CatBreedsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsInteractor.swift; sourceTree = "<group>"; };
 		0D4B63D625B61644007C9C34 /* CatBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreed.swift; sourceTree = "<group>"; };
 		0D919A0E25B61E00007B1911 /* NetworkingHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelpers.swift; sourceTree = "<group>"; };
+		0DA7100A25B6F7EE00ABA32A /* CatBreedsInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsInterfaces.swift; sourceTree = "<group>"; };
+		0DD87D1725B6E81F005E96AA /* CatBreedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedCollectionViewCell.swift; sourceTree = "<group>"; };
+		0DD87D1825B6E81F005E96AA /* CatBreedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatBreedCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,8 @@
 		0D4B63B325B60CCC007C9C34 /* BreedsList */ = {
 			isa = PBXGroup;
 			children = (
+				0DD87D1E25B6E82C005E96AA /* Cell */,
+				0DA7100A25B6F7EE00ABA32A /* CatBreedsInterfaces.swift */,
 				0D4B637425B60A3D007C9C34 /* CatBreedsViewController.swift */,
 				0D4B63BA25B60E30007C9C34 /* CatBreedsViewModel.swift */,
 			);
@@ -184,6 +192,15 @@
 				0D4B63D625B61644007C9C34 /* CatBreed.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0DD87D1E25B6E82C005E96AA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0DD87D1725B6E81F005E96AA /* CatBreedCollectionViewCell.swift */,
+				0DD87D1825B6E81F005E96AA /* CatBreedCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D4B637D25B60A3D007C9C34 /* LaunchScreen.storyboard in Resources */,
+				0DD87D1A25B6E81F005E96AA /* CatBreedCollectionViewCell.xib in Resources */,
 				0D4B637A25B60A3D007C9C34 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +337,8 @@
 				0D4B637525B60A3D007C9C34 /* CatBreedsViewController.swift in Sources */,
 				0D4B63D725B61644007C9C34 /* CatBreed.swift in Sources */,
 				0D919A0F25B61E00007B1911 /* NetworkingHelpers.swift in Sources */,
+				0DD87D1925B6E81F005E96AA /* CatBreedCollectionViewCell.swift in Sources */,
+				0DA7100B25B6F7EE00ABA32A /* CatBreedsInterfaces.swift in Sources */,
 				0D4B63BB25B60E30007C9C34 /* CatBreedsViewModel.swift in Sources */,
 				0D4B637125B60A3D007C9C34 /* AppDelegate.swift in Sources */,
 				0D4B63D125B615DD007C9C34 /* CatBreedsInteractor.swift in Sources */,

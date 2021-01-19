@@ -7,27 +7,36 @@
 
 import Foundation
 
-protocol CatBreedsViewModelProtocol {
-    func getCatBreeds()
-    func showBreedDetail()
-}
+
 
 class CatBreedsViewModel {
     
-    let interactor: CatBreedsInteractorProtocol
+    private weak var view: CatBreedsViewProtocol?
+    private let interactor: CatBreedsInteractorProtocol
+    private(set) var breeds = [CatBreed]()
     
-    init(interactor: CatBreedsInteractor) {
+    init(view: CatBreedsViewProtocol,
+         interactor: CatBreedsInteractor) {
+        self.view = view
         self.interactor = interactor
+        view.showLoading(true)
     }
     
 }
 
 extension CatBreedsViewModel: CatBreedsViewModelProtocol {
     func getCatBreeds() {
-        interactor.fetchCatBreeds { results in
+        interactor.fetchCatBreeds { [weak self] results in
+            guard let self = self else { return }
+            
             switch results {
             case .success(let breeds):
-                print(breeds)
+                self.breeds = breeds
+                
+                DispatchQueue.main.async {
+                    self.view?.reloadCollectionView()
+                    self.view?.showLoading(false)
+                }
             case .failure(let error):
                 print(error)
             }
