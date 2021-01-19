@@ -13,6 +13,7 @@ struct CatBreed: Codable {
     let image: CatBreedImage?
     
     struct CatBreedImage: Codable {
+        let id: String?
         let url: String?
     }
 }

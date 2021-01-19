@@ -1,0 +1,6 @@
+framework module Pods_LystApp_LystAppUITests {
+  umbrella header "Pods-LystApp-LystAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

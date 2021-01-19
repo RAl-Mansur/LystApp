@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CatBreedCollectionViewCell: UICollectionViewCell {
 
@@ -19,7 +20,15 @@ class CatBreedCollectionViewCell: UICollectionViewCell {
     }
 
     func configureWith(breed: CatBreed) {
-        imageView.image = #imageLiteral(resourceName: "example")
+        
+        if let imageData = breed.image,
+           let urlString = imageData.url,
+           let url = URL(string: urlString) {
+            
+            let id = imageData.id ?? UUID().uuidString
+            let resource = ImageResource(downloadURL: url, cacheKey: id)
+            imageView.kf.setImage(with: resource)
+        }
         nameLabel.text = breed.name
     }
  
