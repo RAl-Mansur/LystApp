@@ -7,16 +7,6 @@
 
 import Foundation
 
-enum CatBreedsResults {
-    case success([CatBreed])
-    case failure(ApiError)
-}
-
-protocol CatBreedsInteractorProtocol {
-    func fetchCatBreedsRequest() -> URLRequest
-    func fetchCatBreeds(completion: @escaping (CatBreedsResults) -> Void)
-}
-
 class CatBreedsInteractor: CatBreedsInteractorProtocol {
     
     func fetchCatBreedsRequest() -> URLRequest {

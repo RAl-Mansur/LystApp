@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 class CatBreedsViewModel {
     
     private weak var view: CatBreedsViewProtocol?
@@ -16,7 +14,7 @@ class CatBreedsViewModel {
     private(set) var breeds = [CatBreed]()
     
     init(view: CatBreedsViewProtocol,
-         interactor: CatBreedsInteractor) {
+         interactor: CatBreedsInteractorProtocol) {
         self.view = view
         self.interactor = interactor
         view.showLoading(true)
@@ -38,6 +36,7 @@ extension CatBreedsViewModel: CatBreedsViewModelProtocol {
                     self.view?.showLoading(false)
                 }
             case .failure(let error):
+                // TODO: - Handle error
                 print(error)
             }
         }

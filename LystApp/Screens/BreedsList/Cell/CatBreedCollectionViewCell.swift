@@ -11,6 +11,7 @@ import Kingfisher
 class CatBreedCollectionViewCell: UICollectionViewCell {
 
     static let reuseIdentifier = "CatBreedCell"
+    static let cellSize = CGSize(width: 180, height: 200)
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!

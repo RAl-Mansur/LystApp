@@ -21,6 +21,11 @@
 		0D4B63D125B615DD007C9C34 /* CatBreedsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B63D025B615DD007C9C34 /* CatBreedsInteractor.swift */; };
 		0D4B63D725B61644007C9C34 /* CatBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B63D625B61644007C9C34 /* CatBreed.swift */; };
 		0D508E0D25B7040B0001A5B0 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D508E0C25B7040B0001A5B0 /* Color+Extension.swift */; };
+		0D508E1425B709C90001A5B0 /* CatBreedsViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D508E1325B709C90001A5B0 /* CatBreedsViewSpy.swift */; };
+		0D508E1F25B70A190001A5B0 /* CatBreedsViewModelSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D508E1E25B70A190001A5B0 /* CatBreedsViewModelSpy.swift */; };
+		0D508E2C25B70A880001A5B0 /* CatBreedsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D508E2B25B70A880001A5B0 /* CatBreedsViewModelTests.swift */; };
+		0D508E3125B70AF20001A5B0 /* CatBreedsInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D508E3025B70AF20001A5B0 /* CatBreedsInteractorSpy.swift */; };
+		0D508E4125B713F20001A5B0 /* CatBreedsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D508E4025B713F20001A5B0 /* CatBreedsViewControllerTests.swift */; };
 		0D919A0F25B61E00007B1911 /* NetworkingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D919A0E25B61E00007B1911 /* NetworkingHelpers.swift */; };
 		0DA7100B25B6F7EE00ABA32A /* CatBreedsInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7100A25B6F7EE00ABA32A /* CatBreedsInterfaces.swift */; };
 		0DD87D1925B6E81F005E96AA /* CatBreedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD87D1725B6E81F005E96AA /* CatBreedCollectionViewCell.swift */; };
@@ -68,6 +73,11 @@
 		0D4B63D025B615DD007C9C34 /* CatBreedsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsInteractor.swift; sourceTree = "<group>"; };
 		0D4B63D625B61644007C9C34 /* CatBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreed.swift; sourceTree = "<group>"; };
 		0D508E0C25B7040B0001A5B0 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		0D508E1325B709C90001A5B0 /* CatBreedsViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsViewSpy.swift; sourceTree = "<group>"; };
+		0D508E1E25B70A190001A5B0 /* CatBreedsViewModelSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsViewModelSpy.swift; sourceTree = "<group>"; };
+		0D508E2B25B70A880001A5B0 /* CatBreedsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsViewModelTests.swift; sourceTree = "<group>"; };
+		0D508E3025B70AF20001A5B0 /* CatBreedsInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsInteractorSpy.swift; sourceTree = "<group>"; };
+		0D508E4025B713F20001A5B0 /* CatBreedsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsViewControllerTests.swift; sourceTree = "<group>"; };
 		0D919A0E25B61E00007B1911 /* NetworkingHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelpers.swift; sourceTree = "<group>"; };
 		0DA7100A25B6F7EE00ABA32A /* CatBreedsInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsInterfaces.swift; sourceTree = "<group>"; };
 		0DD87D1725B6E81F005E96AA /* CatBreedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -176,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				0D4B638725B60A3E007C9C34 /* LystAppTests.swift */,
+				0D508E1125B709960001A5B0 /* BreedsList */,
 				0D4B638925B60A3E007C9C34 /* Info.plist */,
 			);
 			path = LystAppTests;
@@ -203,7 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				0D4B63A325B60A64007C9C34 /* Endpoint.swift */,
-				0D4B63D025B615DD007C9C34 /* CatBreedsInteractor.swift */,
 				0D919A0E25B61E00007B1911 /* NetworkingHelpers.swift */,
 			);
 			path = Networking;
@@ -225,6 +235,7 @@
 				0DA7100A25B6F7EE00ABA32A /* CatBreedsInterfaces.swift */,
 				0D4B637425B60A3D007C9C34 /* CatBreedsViewController.swift */,
 				0D4B63BA25B60E30007C9C34 /* CatBreedsViewModel.swift */,
+				0D4B63D025B615DD007C9C34 /* CatBreedsInteractor.swift */,
 			);
 			path = BreedsList;
 			sourceTree = "<group>";
@@ -235,6 +246,26 @@
 				0D4B63D625B61644007C9C34 /* CatBreed.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0D508E1125B709960001A5B0 /* BreedsList */ = {
+			isa = PBXGroup;
+			children = (
+				0D508E1225B709B10001A5B0 /* Spies */,
+				0D508E2B25B70A880001A5B0 /* CatBreedsViewModelTests.swift */,
+				0D508E4025B713F20001A5B0 /* CatBreedsViewControllerTests.swift */,
+			);
+			path = BreedsList;
+			sourceTree = "<group>";
+		};
+		0D508E1225B709B10001A5B0 /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				0D508E1325B709C90001A5B0 /* CatBreedsViewSpy.swift */,
+				0D508E1E25B70A190001A5B0 /* CatBreedsViewModelSpy.swift */,
+				0D508E3025B70AF20001A5B0 /* CatBreedsInteractorSpy.swift */,
+			);
+			path = Spies;
 			sourceTree = "<group>";
 		};
 		0DD87D1E25B6E82C005E96AA /* Cell */ = {
@@ -504,7 +535,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D508E2C25B70A880001A5B0 /* CatBreedsViewModelTests.swift in Sources */,
+				0D508E1F25B70A190001A5B0 /* CatBreedsViewModelSpy.swift in Sources */,
+				0D508E3125B70AF20001A5B0 /* CatBreedsInteractorSpy.swift in Sources */,
 				0D4B638825B60A3E007C9C34 /* LystAppTests.swift in Sources */,
+				0D508E4125B713F20001A5B0 /* CatBreedsViewControllerTests.swift in Sources */,
+				0D508E1425B709C90001A5B0 /* CatBreedsViewSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

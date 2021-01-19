@@ -15,13 +15,13 @@ class CatBreedsViewController: UIViewController {
     
     private(set) var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 180, height: 200)
+        layout.itemSize = CatBreedCollectionViewCell.cellSize
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .bgColor
         return collectionView
     }()
     
-    private(set) var loadingIndicator = UIActivityIndicatorView(style: .medium)
+    private(set) var loadingIndicator = UIActivityIndicatorView(style: .large)
 
     // MARK: - Lifecycle
     
@@ -114,7 +114,7 @@ extension CatBreedsViewController: UICollectionViewDelegateFlowLayout {
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: 180, height: 200)
+        return CatBreedCollectionViewCell.cellSize
     }
     
     func collectionView(_ collectionView: UICollectionView,

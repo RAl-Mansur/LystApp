@@ -7,6 +7,16 @@
 
 import Foundation
 
+enum CatBreedsResults {
+    case success([CatBreed])
+    case failure(ApiError)
+}
+
+protocol CatBreedsInteractorProtocol {
+    func fetchCatBreedsRequest() -> URLRequest
+    func fetchCatBreeds(completion: @escaping (CatBreedsResults) -> Void)
+}
+
 protocol CatBreedsViewProtocol: AnyObject {
     func reloadCollectionView()
     func showLoading(_ show: Bool)
