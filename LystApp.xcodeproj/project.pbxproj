@@ -26,6 +26,8 @@
 		0D508E2C25B70A880001A5B0 /* CatBreedsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D508E2B25B70A880001A5B0 /* CatBreedsViewModelTests.swift */; };
 		0D508E3125B70AF20001A5B0 /* CatBreedsInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D508E3025B70AF20001A5B0 /* CatBreedsInteractorSpy.swift */; };
 		0D508E4125B713F20001A5B0 /* CatBreedsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D508E4025B713F20001A5B0 /* CatBreedsViewControllerTests.swift */; };
+		0D508E4725B71E9B0001A5B0 /* CatBreedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D508E4625B71E9B0001A5B0 /* CatBreedDetailViewController.swift */; };
+		0D508E4F25B728D40001A5B0 /* CatBreedDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D508E4E25B728D40001A5B0 /* CatBreedDetailViewModel.swift */; };
 		0D919A0F25B61E00007B1911 /* NetworkingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D919A0E25B61E00007B1911 /* NetworkingHelpers.swift */; };
 		0DA7100B25B6F7EE00ABA32A /* CatBreedsInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7100A25B6F7EE00ABA32A /* CatBreedsInterfaces.swift */; };
 		0DD87D1925B6E81F005E96AA /* CatBreedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD87D1725B6E81F005E96AA /* CatBreedCollectionViewCell.swift */; };
@@ -78,6 +80,8 @@
 		0D508E2B25B70A880001A5B0 /* CatBreedsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsViewModelTests.swift; sourceTree = "<group>"; };
 		0D508E3025B70AF20001A5B0 /* CatBreedsInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsInteractorSpy.swift; sourceTree = "<group>"; };
 		0D508E4025B713F20001A5B0 /* CatBreedsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsViewControllerTests.swift; sourceTree = "<group>"; };
+		0D508E4625B71E9B0001A5B0 /* CatBreedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedDetailViewController.swift; sourceTree = "<group>"; };
+		0D508E4E25B728D40001A5B0 /* CatBreedDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedDetailViewModel.swift; sourceTree = "<group>"; };
 		0D919A0E25B61E00007B1911 /* NetworkingHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelpers.swift; sourceTree = "<group>"; };
 		0DA7100A25B6F7EE00ABA32A /* CatBreedsInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsInterfaces.swift; sourceTree = "<group>"; };
 		0DD87D1725B6E81F005E96AA /* CatBreedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -224,6 +228,7 @@
 			children = (
 				0D4B63BF25B61248007C9C34 /* Coordinator.swift */,
 				0D4B63B325B60CCC007C9C34 /* BreedsList */,
+				0D508E4525B71E5B0001A5B0 /* BreedDetail */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -266,6 +271,15 @@
 				0D508E3025B70AF20001A5B0 /* CatBreedsInteractorSpy.swift */,
 			);
 			path = Spies;
+			sourceTree = "<group>";
+		};
+		0D508E4525B71E5B0001A5B0 /* BreedDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0D508E4625B71E9B0001A5B0 /* CatBreedDetailViewController.swift */,
+				0D508E4E25B728D40001A5B0 /* CatBreedDetailViewModel.swift */,
+			);
+			path = BreedDetail;
 			sourceTree = "<group>";
 		};
 		0DD87D1E25B6E82C005E96AA /* Cell */ = {
@@ -522,10 +536,12 @@
 				0DD87D1925B6E81F005E96AA /* CatBreedCollectionViewCell.swift in Sources */,
 				0DA7100B25B6F7EE00ABA32A /* CatBreedsInterfaces.swift in Sources */,
 				0D4B63BB25B60E30007C9C34 /* CatBreedsViewModel.swift in Sources */,
+				0D508E4725B71E9B0001A5B0 /* CatBreedDetailViewController.swift in Sources */,
 				0D4B637125B60A3D007C9C34 /* AppDelegate.swift in Sources */,
 				0D4B63D125B615DD007C9C34 /* CatBreedsInteractor.swift in Sources */,
 				0D4B63A425B60A64007C9C34 /* Endpoint.swift in Sources */,
 				0D4B637325B60A3D007C9C34 /* SceneDelegate.swift in Sources */,
+				0D508E4F25B728D40001A5B0 /* CatBreedDetailViewModel.swift in Sources */,
 				0D4B63C025B61248007C9C34 /* Coordinator.swift in Sources */,
 				0D508E0D25B7040B0001A5B0 /* Color+Extension.swift in Sources */,
 			);

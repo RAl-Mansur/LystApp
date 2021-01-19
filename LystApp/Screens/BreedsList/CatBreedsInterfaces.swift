@@ -25,5 +25,5 @@ protocol CatBreedsViewProtocol: AnyObject {
 protocol CatBreedsViewModelProtocol {
     var breeds: [CatBreed] { get }
     func getCatBreeds()
-    func showBreedDetail()
+    func showBreedDetail(for breed: CatBreed)
 }

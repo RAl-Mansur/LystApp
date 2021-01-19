@@ -10,16 +10,20 @@ import Foundation
 class CatBreedsViewModel {
     
     private weak var view: CatBreedsViewProtocol?
+    private weak var coordinator: MainCoordinator?
     private let interactor: CatBreedsInteractorProtocol
     private(set) var breeds = [CatBreed]()
     
     init(view: CatBreedsViewProtocol,
+         coordinator: MainCoordinator,
          interactor: CatBreedsInteractorProtocol) {
+        
         self.view = view
+        self.coordinator = coordinator
         self.interactor = interactor
-        view.showLoading(true)
+        
+        self.view?.showLoading(true)
     }
-    
 }
 
 extension CatBreedsViewModel: CatBreedsViewModelProtocol {
@@ -42,8 +46,8 @@ extension CatBreedsViewModel: CatBreedsViewModelProtocol {
         }
     }
     
-    func showBreedDetail() {
-        
+    func showBreedDetail(for breed: CatBreed) {
+        coordinator?.showCatBreedDetail(breed)
     }
 }
 

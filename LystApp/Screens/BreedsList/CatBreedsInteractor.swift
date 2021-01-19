@@ -33,7 +33,10 @@ class CatBreedsInteractor: CatBreedsInteractorProtocol {
                 return
             }
 
-            guard let parsedData = try? JSONDecoder().decode([CatBreed].self, from: data) else {
+            let jsonDecoder = JSONDecoder()
+            jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
+            
+            guard let parsedData = try? jsonDecoder.decode([CatBreed].self, from: data) else {
                 completion(.failure(.parsing))
                 return
             }
@@ -42,6 +45,4 @@ class CatBreedsInteractor: CatBreedsInteractorProtocol {
             
         }.resume()
     }
-    
-    
 }

@@ -45,19 +45,21 @@ class CatBreedCollectionViewCell: UICollectionViewCell {
     // MARK: - Configuration
 
     func configureWith(breed: CatBreed) {
-        if let imageData = breed.image,
-           let urlString = imageData.url,
+        if let imageData = breed.image {
+            cacheImage(imageData)
+        }
+        
+        nameLabel.text = breed.name
+    }
+    
+    private func cacheImage(_ imageData: CatBreedImage) {
+        if let urlString = imageData.url,
            let url = URL(string: urlString) {
             
-            let id = imageData.id ?? UUID().uuidString
-            let resource = ImageResource(downloadURL: url, cacheKey: id)
-            imageView.kf.setImage(with: resource)
+            let resource = ImageResource(downloadURL: url, cacheKey: imageData.id)
             imageView.kf.setImage(with: resource,
                                   placeholder: UIImage(named: "placeholder"))
         }
-        
-        
-        nameLabel.text = breed.name
     }
  
     static func nib() -> UINib {

@@ -88,7 +88,8 @@ extension CatBreedsViewController: CatBreedsViewProtocol {
 extension CatBreedsViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        print("Tapped index: \(indexPath)")
+        guard let catBreed = viewModel?.breeds[indexPath.row] else { return }
+        viewModel?.showBreedDetail(for: catBreed)
     }
 }
 
