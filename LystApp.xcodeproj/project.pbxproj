@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		0D4B63C025B61248007C9C34 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B63BF25B61248007C9C34 /* Coordinator.swift */; };
 		0D4B63D125B615DD007C9C34 /* CatBreedsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B63D025B615DD007C9C34 /* CatBreedsInteractor.swift */; };
 		0D4B63D725B61644007C9C34 /* CatBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B63D625B61644007C9C34 /* CatBreed.swift */; };
+		0D508E0D25B7040B0001A5B0 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D508E0C25B7040B0001A5B0 /* Color+Extension.swift */; };
 		0D919A0F25B61E00007B1911 /* NetworkingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D919A0E25B61E00007B1911 /* NetworkingHelpers.swift */; };
 		0DA7100B25B6F7EE00ABA32A /* CatBreedsInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7100A25B6F7EE00ABA32A /* CatBreedsInterfaces.swift */; };
 		0DD87D1925B6E81F005E96AA /* CatBreedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD87D1725B6E81F005E96AA /* CatBreedCollectionViewCell.swift */; };
@@ -66,6 +67,7 @@
 		0D4B63BF25B61248007C9C34 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		0D4B63D025B615DD007C9C34 /* CatBreedsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsInteractor.swift; sourceTree = "<group>"; };
 		0D4B63D625B61644007C9C34 /* CatBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreed.swift; sourceTree = "<group>"; };
+		0D508E0C25B7040B0001A5B0 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		0D919A0E25B61E00007B1911 /* NetworkingHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelpers.swift; sourceTree = "<group>"; };
 		0DA7100A25B6F7EE00ABA32A /* CatBreedsInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsInterfaces.swift; sourceTree = "<group>"; };
 		0DD87D1725B6E81F005E96AA /* CatBreedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -119,7 +121,6 @@
 				2305F9CFCF7C2332A93EDBD3 /* Pods-LystAppTests.debug.xcconfig */,
 				75EF65D66AA49C2408FEFD16 /* Pods-LystAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -193,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				0D4B63A925B60B61007C9C34 /* Constants.swift */,
+				0D508E0C25B7040B0001A5B0 /* Color+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -494,6 +496,7 @@
 				0D4B63A425B60A64007C9C34 /* Endpoint.swift in Sources */,
 				0D4B637325B60A3D007C9C34 /* SceneDelegate.swift in Sources */,
 				0D4B63C025B61248007C9C34 /* Coordinator.swift in Sources */,
+				0D508E0D25B7040B0001A5B0 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

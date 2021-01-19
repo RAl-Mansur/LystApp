@@ -11,17 +11,20 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CatBreedCell" id="gTV-IL-0wX" customClass="CatBreedCollectionViewCell" customModule="LystApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="257" height="247"/>
+            <rect key="frame" x="0.0" y="0.0" width="180" height="249"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="257" height="247"/>
+                <rect key="frame" x="0.0" y="0.0" width="180" height="249"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vQk-HA-wBW">
-                        <rect key="frame" x="12" y="12" width="233" height="190.5"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="vQk-HA-wBW">
+                        <rect key="frame" x="12" y="12" width="156" height="171"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGh-vv-Ftl">
-                        <rect key="frame" x="12" y="214.5" width="233" height="20.5"/>
+                        <rect key="frame" x="12" y="195" width="156" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="9yE-wb-2me"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -30,20 +33,23 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="lGh-vv-Ftl" secondAttribute="trailing" constant="12" id="1xW-lE-9Eo"/>
-                <constraint firstItem="vQk-HA-wBW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="4Fd-eN-6hH"/>
-                <constraint firstItem="vQk-HA-wBW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="IUm-zr-Wyk"/>
-                <constraint firstAttribute="trailing" secondItem="vQk-HA-wBW" secondAttribute="trailing" constant="12" id="XCs-DK-jbJ"/>
-                <constraint firstAttribute="bottom" secondItem="lGh-vv-Ftl" secondAttribute="bottom" constant="12" id="Y2q-ZL-N5F"/>
-                <constraint firstItem="lGh-vv-Ftl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="ktd-qu-er5"/>
-                <constraint firstItem="lGh-vv-Ftl" firstAttribute="top" secondItem="vQk-HA-wBW" secondAttribute="bottom" constant="12" id="wKv-AS-P6U"/>
+                <constraint firstAttribute="trailing" secondItem="lGh-vv-Ftl" secondAttribute="trailing" constant="12" id="0gn-9D-d70"/>
+                <constraint firstItem="lGh-vv-Ftl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="3uA-V4-ZAZ"/>
+                <constraint firstItem="vQk-HA-wBW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="5vY-hH-ceJ"/>
+                <constraint firstItem="vQk-HA-wBW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="Vx3-Jh-20M"/>
+                <constraint firstAttribute="bottom" secondItem="lGh-vv-Ftl" secondAttribute="bottom" constant="12" id="Xex-v1-if1"/>
+                <constraint firstAttribute="trailing" secondItem="vQk-HA-wBW" secondAttribute="trailing" constant="12" id="d7K-Hf-Kit"/>
+                <constraint firstItem="lGh-vv-Ftl" firstAttribute="top" secondItem="vQk-HA-wBW" secondAttribute="bottom" constant="12" id="nem-gm-evO"/>
             </constraints>
-            <size key="customSize" width="257" height="247"/>
+            <size key="customSize" width="257" height="346"/>
             <connections>
                 <outlet property="imageView" destination="vQk-HA-wBW" id="de5-zM-Aa4"/>
                 <outlet property="nameLabel" destination="lGh-vv-Ftl" id="Iq7-jQ-qHS"/>
             </connections>
-            <point key="canvasLocation" x="-647.10144927536237" y="75.334821428571431"/>
+            <point key="canvasLocation" x="-647.82608695652175" y="108.14732142857143"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="placeholder" width="120" height="120"/>
+    </resources>
 </document>
